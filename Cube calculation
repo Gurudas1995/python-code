@@ -1,0 +1,7 @@
+# Simple code to define function and calculate a cube of the number
+def cube(number):
+    cube = int(number) * int(number) * int(number)
+    return cube
+inputNumber = input("please enter your number-")
+output= cube(inputNumber)
+print("cube of the number is",output)
