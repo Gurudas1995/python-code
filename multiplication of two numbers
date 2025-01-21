@@ -1,0 +1,9 @@
+# Multiplication of two number given by user as input
+def multiplication(number1 , number2):
+    multi = int(number1) * int(number2)
+    return multi
+    
+input1 = input("enter 1st number- ")
+input2 = input("enter 2nd number- ")
+result = multiplication(input1, input2)
+print("Multiplication of given number is - ",result)
