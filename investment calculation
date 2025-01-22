@@ -1,0 +1,13 @@
+# Track Your investment
+
+def invest(amount, rate, time):  #define function
+    print(f"Principle amount: ${amount}") # here f is for formatted strin literal, allows you to embed variable or expression directly inside a string using{}
+    print(f"annual rate of return: {rate}")
+    for time in range(1, time + 1): 
+            amount = amount * (1 + rate) #compund the interest caluculation
+            print(f"year {time}: $ {amount: }") 
+       
+amount = float(input("Enter your investment amount: ")) # take value for investment amount from user
+rate = float(input("Enter your annual rate:" )) # take value for annual rate from user
+time = int(input("Enter your period of investment: ")) # take value for period from user
+result = invest(amount, rate, time)   # call a function
