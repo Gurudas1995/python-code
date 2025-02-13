@@ -1,0 +1,12 @@
+# Armstrong Number
+number = 130
+temp = number
+sum = 0
+while (number != 0):
+    reminder  = int(number % 10)
+    number = number / 10
+    sum = sum + reminder * reminder * reminder
+if(temp == sum):
+    print("its an armstrong number")
+else:
+    print("its not an armstrong number")
